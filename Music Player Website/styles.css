@@ -1,0 +1,322 @@
+@keyframes revolving{
+  from{
+    transform: rotateX(90deg)rotateY(90deg);
+  }
+  to{
+    transform: rotateX(0deg)rotateY(0deg);
+  }
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background:  linear-gradient(#0c1027,purple 120%,lightpink 150%);
+}
+#mainbody{
+  left: 60px;
+  display: inline-block;
+  width: 70%;
+}
+aside {
+  display: inline-block;
+  width: 20%;
+    margin-left: 3%;
+    position: relative;
+    top: -1150px;
+    left: 150px;
+    animation: revolving 2s ease-in 1;
+    /*vertical-align: top;*/
+    /*width: 25%;*/
+}
+.asidee{
+  color: white;
+  /*display: inline-;*/
+}
+.asidee h6{
+  color: darkgray;
+  position: relative;
+top: -105px;
+left: 90px;
+  /*display: block;*/
+}
+.asidee i{
+  left: 200px;
+}
+.op{
+  top: -100px ;
+  position: relative;
+}
+.opp{
+  top: -200px ;
+  position: relative;
+}
+.oppp{
+  top: -300px ;
+  position: relative;
+}
+.upper{
+  top: -70px;
+  left: 90px;
+}
+.asidee img{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-top: 15px;
+  display: inline-block;
+  /*margin-left: 120px;*/
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 11px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /*font-size: 10px;*/
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #4f455e;
+  opacity: 100%;
+  color: white;
+  /*text-align: center;*/
+}
+.footer img{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+.inlinee{
+   display: inline-block;
+   position: relative;
+}
+.margin-less{
+    margin-left: 30px;
+  /*position: fixed;*/
+}
+.blockk{
+  margin-top: -10px;
+  color: darkgrey;
+  /*position: relative;*/
+  /*display: block;*/
+}
+.lower{
+  /*bottom: -10px;*/
+  top: 5px;
+
+}
+
+
+/*top bar*/
+/*#topnav{
+  right: 0;
+}*/
+#logo{
+  height: 60px;
+  width: 140px;
+  margin-left: 3%;
+  margin-top: 0.75%;
+}
+.whiteheading{
+  color: white;
+}
+.fav{
+  margin-left: 7%;
+  margin-right: 37%;
+  top: -18px;
+  display: inline-block;
+  position: relative;
+}
+#searchbar{
+  background-color: #1f4254;
+  opacity: 50%;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  /*margin-right: 2%;*/
+}
+#searchbar i{
+  padding: 5px;
+  display: inline-block;
+
+}
+#searchbar input{
+  border: 0;
+  display: inline-block;
+}
+#searchbar input::placeholder{
+  /*border: 0;*/
+  font-size: 15px;
+  color: white;
+}
+#profile{
+  /*position: relative;*/
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+}
+.rightalign{
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  top: -15px;
+}
+.rightalign i{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*Main Images*/
+#homeimages{
+  display: inline-block;
+  position: relative;
+}
+#homeimages img{
+  
+  position: absolute;
+  box-shadow:3px 3px 3px 3px #1e212e; 
+  transition: 0.3s ease-in-out;
+   /*position: relative;*/
+}
+#image1{
+  left: 50px;
+  height: 200px;
+  width: 400px;
+  opacity: 0.3;
+  z-index: 1;
+}
+#image2{
+  left: 200px;
+  height: 210px;
+  width: 410px;
+  z-index: 2;
+}
+#image3{
+  left: 400px;
+  height: 200px;
+  width: 400px;
+  opacity: 0.3;
+  z-index: 1;
+}
+#homeimages img:hover{
+opacity: 1;
+height: 220px;
+width: 420px;
+z-index: 3;
+}
+.headingg{
+  display: block;
+  /*position: fixed;*/
+  margin-left: 50px;
+  margin-top: 250px;
+}
+.imagesblock{
+  display: flex;
+  width: 50%;
+}
+.block{
+  color: white;
+  margin-left: 100px;
+  width: 40%;
+transition: 0.3s ease-in-out;
+}
+.block:hover{
+  border-radius: 20px;
+  /*box-shadow:0px 0px px 2px beige;*/
+  padding: 20px;
+}
+
+.imagesblock .block img{
+  height: 140px;
+  width: 140px;
+  display: inline-block;
+  top: 40px;
+
+}
+.imagesblock .block .textblock{
+  display: inline-block;
+}
+.imagesblock .block h5{
+  color: darkgray;
+  display: block;
+}
+.leftshift{
+  display: block;
+  position: relative;
+  left: 50px;
+}
+#popularartists img{
+  height: 140px;
+  width: 140px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+#popularartists img:hover{
+  height: 150px;
+  width: 150px;
+  box-shadow:3px 3px 3px 3px #1e212e;
+}
+.range{
+  left: 300px;
+}
+.playmusic{
+  left: 160px;
+  bottom: 30px;
+}
+.playmusic i{
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.rangee{
+  left: 500px;
+}
