@@ -1,0 +1,154 @@
+.heading{
+box-sizing: border-box;
+position: absolute;
+width: 100vw;
+height: 6.25vh;
+left: 0vw;
+top: 0vh;
+background: #A8DADC;
+border: 1px solid #000000;
+}
+.logo{
+    position: absolute;
+    top: -0.9765625vh;
+    height: 7.8125vh;
+    width: 10.417vw;
+}
+#graph {
+position: absolute;
+left: 35.278vw;
+top: 0.9765625vh;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 2.500vw;
+line-height: 42px;
+color: #000000;
+background: transparent;
+border: 0;
+}
+#table {
+position: absolute;
+left: 58.472vw;
+top: 0.9765625vh;
+display: inline-block;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 2.500vw;
+line-height: 42px;
+color: #000000;
+background: transparent;
+border: 0;
+}
+#graph:hover{
+    font-weight: 550;
+}
+#table:hover{
+    font-weight: 550;
+}
+#toolbar{
+    position: absolute;
+    top: 19.04296875vh;
+    /* bottom: 178px; */
+    left: 0vw;
+    height: 63.57421875vh;
+    width: 4.514vw;
+    background-color: rgba(211, 211, 211, 0.918);
+}
+#graphimage{
+position: absolute;
+width: 67.153vw;
+/* height: 63.57421875vh; */
+height: 45.208333vw;
+left: 16.458vw;
+top: 18.1640625vh;
+
+background: rgba(168, 218, 220, 0.5);
+border-radius: 10px;
+}
+#header{
+position: absolute;
+width: 4.028vw;
+height: 2.05078125vh;
+left: 31.458vw;
+/* top: 3.00390625vh; */
+top: 0.947vw;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.250vw;
+line-height: 21px;
+}
+#ylabel{
+    position: absolute;
+width: 4.097vw;
+height: 2.05078125vh;
+left: 1.944vw;
+/* top: 29.78515625vh; */
+top: 21.181vw;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.250vw;
+line-height: 21px;
+}
+#xlabel{
+    position: absolute;
+    width: 4.167vw;
+    height: 2.05078125vh;
+    left: 31.319vw;
+    top: 37.833vw;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.250vw;
+    line-height: 21px;
+}
+#footer{
+    position: absolute;
+    width: 3.611vw;
+    height: 2.05078125vh;
+    left: 31.458vw;
+    top: 40.917vw;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.250vw;
+    line-height: 21px;
+}
+.graphi{
+position: absolute;
+width: 49.583vw;
+/* height: 46.6796875vh; */
+height: 33.194vw;
+left: 8.750vw;
+/* top: 8.3984375vh; */
+top: 5.972vw;
+}
+/* #undertext{
+position: absolute;
+width: 15.347vw;
+height: 3.61328125vh;
+left: 42.361vw;
+top: 98.6171875vh;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.250vw;
+line-height: 21px;
+
+} */
+#tableimage{
+    position: absolute;
+    width: 67.153vw;
+/* height: 63.57421875vh; */
+height: 45.208333vw;
+left: 16.458vw;
+top: 18.1640625vh;
+    background: rgba(168, 218, 220, 0.5);
+    border-radius: 10px;
+    }
