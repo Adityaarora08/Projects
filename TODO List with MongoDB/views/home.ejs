@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <!-- title variable is printed -->
+        <%= title %>
+    </title>
+    <!-- css file is linked to ejs -->
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h1 class="heading">TODO App</h1>
+    <div class="line"></div>
+    <div>
+        <!-- form data being send via post method -->
+    <form action="/create-contact" method="POST">
+        <p>Description :</p>
+        <input type="text" name="task" placeholder="What do you need to do?" required>
+        <!-- <input type="text" name="category" placeholder="Enter category" required> -->
+        <p>Category :</p>
+        <select name="category" id="lang" placeholder="Enter category" required>
+            <!-- default non-selectable option -->
+            <option value="" disabled selected hidden>Choose a category</option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Other">Other</option>
+          </select>
+        <p>Time :</p>
+        <input type="date" name="datee" placeholder="Enter date" required>
+        <br>
+        <button type="submit" class="butt" id="addtask"><i class="fa-brands fa-angellist"></i>ADD TASK</button>
+        <!-- anchor tag to delete the selected elements -->
+        <a href="/delete-contact/">
+        <button type="button" class="butt" id="deletetask"><i class="fas fa-window-close"></i>DELETE TASK</button>
+        </a>
+    </form>
+    
+    <h2 class="heading">TASKS</h2>
+    <div class="line-small"></div>
+    <ul>
+        <!-- for loop to print the items in the list from database -->
+        <% for(let i of contact_list){%>
+        <li>
+            <p class="category"><%=i.category %></p>
+            <p class="task"><%=i.task %></p>
+            <br>
+            <p class="dateoftask"><%=i.datee %></p>
+            <div class="line-small"></div>
+        </li>
+        <%if(i.selected==false){%>
+        <div class="checkbox">
+            <a href="/select-task/?id=<%= i._id %>">
+                <button type="button" class="box" id="box"></button>
+            </a>
+        </div>
+        <%}%>
+        <%if(i.selected==true){%>
+            <div class="checkbox">
+                <a href="/select-task/?id=<%= i._id %>">
+                    <button type="button" class="blackbox" id="box"></button>
+                </a>
+            </div>
+        <%}%>
+        <%}%>
+    </ul></div>
+    <!-- javascript file included -->
+    <script type="text/javascript" src="/js/home.js"></script>
+    <script src="https://kit.fontawesome.com/bf203cff51.js" crossorigin="anonymous"></script>
+</body>
+</html>

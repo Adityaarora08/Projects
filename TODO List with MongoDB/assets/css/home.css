@@ -1,0 +1,126 @@
+/* css file for home.ejs  */
+body{
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+.heading{
+    /* text-align: center; */
+    margin-top: 25px;
+    color: gray;
+    font-family:'Times New Roman', Times, serif;
+}
+ul{
+    position: absolute;
+    /* align-items: center; */
+    left: 22vw;
+    /* right: auto; */
+}
+.line-small{
+    position: relative;
+    border: 0.5px solid gray;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    align-self: center;
+}
+li {
+    /* display: block; */
+    /* position:static; */
+    /* background-color: black; */
+    color: black;
+    padding: 5px;
+    /* border-radius: 20px; */
+    height: 20px;
+    width: 50vw;
+    /* padding-bottom: 1px; */
+    margin: 5px;
+    margin-bottom: 80px;
+    /* padding-bottom:2px ; */
+    justify-content: space-between;
+    
+}
+/* li p {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    /* justify-content: space-between; 
+} */
+.line{
+    position: relative;
+    border: 1px solid gray;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    align-self: center;
+}
+.butt{
+    position: relative;
+    /* display: inline; */
+    border-radius: 5px;
+    margin-top: 15px;
+    border: transparent;
+    font-size: 20px;
+    font-family: monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 170px;
+}
+#addtask{
+    color: white;
+    background-color: rgb(77, 77, 77);
+}
+#addtask:hover{
+    background-color: rgb(53, 53, 53);
+}
+#deletetask{
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+#deletetask:hover{
+    color: white;
+    background-color: rgb(231, 19, 19);
+}
+.category{
+    position: absolute;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: 800;
+    background-color: rgb(255, 158, 174);
+    border-radius: 5px ;
+    left: 30px;
+    font-size: 20px;
+}
+.task{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+}
+.dateoftask{
+    position: relative;
+    margin-top: 15px;
+    color: rgb(148, 147, 147);
+}
+.checkbox{
+    position: absolute;
+    right: 0;
+    margin-bottom: 50px;
+}
+.box{
+    border: 1px solid black;
+    height: 15px;
+    width: 15px;
+    border-radius: 40%;
+    /* background-color: transparent; */
+}
+.blackbox{
+    border: 1px solid black;
+    height: 15px;
+    width: 15px;
+    border-radius: 40%;
+    background-color: black;
+}
